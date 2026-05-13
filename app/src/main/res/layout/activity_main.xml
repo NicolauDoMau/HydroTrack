@@ -5,65 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2D8E8A"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="76dp"
-        android:layout_height="20dp"
+        android:layout_width="171dp"
+        android:layout_height="28dp"
         android:layout_marginStart="130dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="130dp"
         android:text="HydroTrack"
         android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edtIdade"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:hint="Idade (anos)"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPeso" />
-
-    <EditText
-        android:id="@+id/edtPeso"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:hint="Peso (kg)"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/edtAgua"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:hint="Água consumida(ml)"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rgAtv" />
 
     <Button
         android:id="@+id/btnCal"
@@ -72,7 +31,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:backgroundTint="#9dd5d4"
         android:text="CALCULAR META"
+        android:textColor="	#505050"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtAgua" />
@@ -86,6 +47,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:text="Resultado:"
+        android:textColor="#fff5c3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,13 +58,65 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="24dp"
         android:text="Atividade fisica:"
+        android:textColor="#fff5c3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtIdade" />
+
+    <EditText
+        android:id="@+id/edtAgua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Água consumida(ml)"
+        android:inputType="numberDecimal"
+        android:textColor="#fff5c3"
+        android:textColorHint="#fff5c3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgAtv" />
+
+    <EditText
+        android:id="@+id/edtIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Idade (anos)"
+        android:inputType="number"
+        android:textColor="#fff5c3"
+        android:textColorHint="#fff5c3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPeso" />
+
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Peso (kg)"
+        android:inputType="numberDecimal"
+        android:textColor="#fff5c3"
+        android:textColorHint="#fff5c3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <RadioGroup
         android:id="@+id/rgAtv"
@@ -121,21 +135,27 @@
             android:layout_width="115dp"
             android:layout_height="wrap_content"
             android:text="Sedentário"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#fff5c3" />
 
         <RadioButton
             android:id="@+id/rbModv"
             android:layout_width="114dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="#E7DBDB"
+            android:buttonTint="#FAF9F9"
+            android:foregroundTint="#DCCACA"
             android:text="Moderado"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#fff5c3" />
 
         <RadioButton
             android:id="@+id/rbInt"
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:text="Intenso"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#fff5c3" />
 
     </RadioGroup>
 
